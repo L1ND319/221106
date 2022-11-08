@@ -1,0 +1,8 @@
+<!--pages/science/science.wxml-->
+<view class="ground">
+  <image src="../../png/科普/科普-背景.png" mode="widthFix">
+  </image>
+</view>
+  <button class="tapbtn1" plain="true" bindtap="click">
+    <image class="tapimg1" src='../../png/科普/科普-刷新.png'></image>
+  </button>

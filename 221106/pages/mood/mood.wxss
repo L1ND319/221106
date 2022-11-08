@@ -1,0 +1,56 @@
+/* pages/mood/mood.wxss */
+.swiper{
+  align-items: center;
+  justify-content: center;
+  left: 25px;
+  top: 100px;
+  width: 300px;
+  height: 50px;
+  opacity: 1;
+  }
+.view_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 5%;
+}
+
+#textarea_content {
+  border-width: 1rpx;
+  border-color: #89969F;
+  border-style: solid;
+  border-radius: 10rpx;
+  width: 96%;
+  margin-top: 20rpx;
+  padding: 2%;
+}
+.input_title {
+  border-width: 1rpx;
+  border-color: #89969F;
+  border-style: solid;
+  border-radius: 10rpx;
+  width: 96%;
+  margin-top: 20rpx;
+  padding: 2%;
+}
+.btn_commit{
+  background-color: #FFFFFF;
+  color: #8B7FF5;
+  font-size: 30rpx;
+  margin-top: 40rpx;
+  text-align: center;
+  left: 80px;
+  border: 3rpx solid #8B7FF5;
+  border-radius: 20rpx;
+}
+.btn_del{
+  background-color: #FFFFFF;
+  color: #8B7FF5;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  text-align: center;
+  left: 80px;
+  border: 3rpx solid #8B7FF5;
+  border-radius: 20rpx;
+}

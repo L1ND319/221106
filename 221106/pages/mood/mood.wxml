@@ -1,0 +1,17 @@
+<!--pages/mood/mood.wxml-->
+<swiper indicator-dots="true">
+<swiper-item>
+</swiper-item>
+<swiper-item>
+</swiper-item>
+<swiper-item>
+</swiper-item>
+</swiper>
+<view class="view_container">
+  <input type="text" placeholder="标题" class="input_title" bindinput="titleChange" value="{{title}}"></input>
+  <textarea name="textarea_content" id="textarea_content" cols="30" rows="5" bindinput="contentChange"
+    placeholder="内容" value="{{content}}"></textarea>
+  <button bindtap="commit" class="btn_commit">确定</button>
+  <button bindtap="commit" class="btn_del">删除</button>
+</view>
+

@@ -1,0 +1,32 @@
+/* pages/science/science.wxss */
+page{
+  height:100%; /*设置高度100%，达到满屏状态*/
+}
+.ground{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.ground image{
+  width: 250px;
+  height: 250px;
+  position:fixed; 
+  z-index: -1;
+}
+.tapimg1{ 
+  position: fixed; 
+  left: 310px;
+  top: 50px; 
+  width: 24px;
+  height: 24px;
+}
+.tapbtn1[plain]{
+  position: fixed;
+  left: 310px;
+  top: 50px; 
+  padding: 0;
+  border:none;   
+  width: 24px;
+  height: 24px;
+}
