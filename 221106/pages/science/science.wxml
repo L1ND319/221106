@@ -2,7 +2,8 @@
 <view class="ground">
   <image src="../../png/科普/科普-背景.png" mode="widthFix">
   </image>
+  <view class="text-box">
+        <text class="randomtext">“{{text}}”</text>
 </view>
-  <button class="tapbtn1" plain="true" bindtap="click">
-    <image class="tapimg1" src='../../png/科普/科普-刷新.png'></image>
-  </button>
+</view>
+<image class="flash_img" src='../../png/科普/科普-刷新.png' bindtap="flash"></image>
