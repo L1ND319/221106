@@ -4,7 +4,8 @@
     "pages/science/science",
     "pages/mine/mine",
     "pages/mood/mood",
-    "pages/month/month"
+    "pages/month/month",
+    "pages/write_note/write_note"
   ],
   "entryPagePath":"pages/mood/mood",
   "window": {
