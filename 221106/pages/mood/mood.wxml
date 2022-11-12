@@ -1,13 +1,13 @@
 <wxs module="time" src="../../utils/time_utils.wxs"></wxs>
 <swiper class="swi" autoplay="true" indicator-dots="true" circular="true">
     <swiper-item>
-        <image class="image_swi" src="../../png/心情/心情-text1.png" mode="widthFix"></image>
+        <image class="image_swi" src="../../png/mood/mood-text1.png" mode="widthFix"></image>
     </swiper-item>
     <swiper-item>
-        <image class="image_swi" src="../../png/心情/心情-text2.png" mode="widthFix"></image>
+        <image class="image_swi" src="../../png/mood/mood-text2.png" mode="widthFix"></image>
     </swiper-item>
     <swiper-item>
-        <image class="image_swi" src="../../png/心情/心情-text3.png" mode="widthFix"></image>
+        <image class="image_swi" src="../../png/mood/mood-text3.png" mode="widthFix"></image>
     </swiper-item>
 </swiper>
 <view class="container">
@@ -16,7 +16,7 @@
        <text class="text_count">{{list.length}}个备忘录</text>
       </view>
       <text class="text_orderby" bindtap="orderBy">{{orderbyItemList[orderbyIndex]}}</text>
-      <image src="../../png/心情/心情-下拉key.png" class="image_orderby"></image>
+      <image src="../../png/mood/mood-key.png" class="image_orderby"></image>
     </view>
   <view style="margin-top: 10rpx;margin-left: 5%;margin-right: 5%;width: 90%;background-color: #89969F; height: 1rpx;">
   </view>
@@ -48,8 +48,8 @@
   </scroll-view>
 </view>
 <view class="bot">
-<image class="image_insert_note" src="../../png/心情/心情-新建.png" bindtap="gotoWriteNote"></image>
+<image class="image_insert_note" src="../../png/mood/mood-add.png" bindtap="gotoWriteNote"></image>
 <view class="muyu">
-    <image bindtap="onswitch" src="{{flag ?'../../png/心情/心情-木鱼1.png':'../../png/心情/心情-木鱼2.png'}}"></image> 
+    <image bindtap="onswitch" src="{{flag ?'../../png/mood/mood-muyu1.png':'../../png/mood/mood-muyu2.png'}}"></image> 
 </view>
 </view>
