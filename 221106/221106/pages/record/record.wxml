@@ -1,8 +1,0 @@
-<!--pages/record/record.wxml-->
-<view class="ground">
-  <image src="../../png/record/background.png" mode="widthFix">
-  </image>
-</view>
-<button class="jump" bindtap="goTo" style="width: 480rpx;">添加</button>
-
-
