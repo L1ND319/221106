@@ -1,9 +1,9 @@
 <!--pages/science/science.wxml-->
 <view class="ground">
-  <image src="../../png/science/science-ground.png" mode="widthFix">
+  <image src="../../png/science/science-ground2.png" mode="widthFix">
   </image>
   <view class="text-box">
         <text class="randomtext">“{{text}}”</text>
 </view>
 </view>
-<image class="flash_img" src='../../png/science/science-flash.png' bindtap="flash"></image>
+<image class="flash_img" src='../../png/science/science-flash2.png' bindtap="flash"></image>

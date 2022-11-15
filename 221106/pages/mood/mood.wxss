@@ -1,5 +1,7 @@
 page {
-  height: 70%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 .swi{
   width: 100%;
@@ -169,12 +171,12 @@ page {
     height: 70rpx;
     position: absolute;
     right: 5%;
-    bottom: 35%;
+    bottom: 80%;
   }
 .muyu image {
     width: 300rpx;
     height: 300rpx;
     position: absolute;
     left: 5%; 
-    bottom: 10%;
+    bottom: 50%;
 }
