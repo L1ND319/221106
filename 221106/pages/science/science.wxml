@@ -1,6 +1,6 @@
 <!--pages/science/science.wxml-->
 <view class="ground">
-  <image src="../../png/science/science-ground2.png" mode="widthFix">
+  <image src="../../png/science/science-ground3.png" mode="widthFix">
   </image>
   <view class="text-box">
         <text class="randomtext">“{{text}}”</text>

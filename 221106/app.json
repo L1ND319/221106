@@ -5,9 +5,12 @@
     "pages/mine/mine",
     "pages/mood/mood",
     "pages/month/month",
-    "pages/write_note/write_note"
+    "pages/write_note/write_note",
+    "pages/month/explain",
+    "pages/record/add/add"
+
   ],
-  "entryPagePath":"pages/mood/mood",
+  "entryPagePath":"pages/month/month",
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "经记人",

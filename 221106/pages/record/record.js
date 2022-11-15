@@ -1,6 +1,13 @@
 // pages/record/record.js
 Page({
 
+  goTo:function(){
+    wx.navigateTo({
+      url: '../record/add/add',
+    })
+  },
+
+
   /**
    * 页面的初始数据
    */
@@ -64,3 +71,5 @@ Page({
 
   }
 })
+
+
