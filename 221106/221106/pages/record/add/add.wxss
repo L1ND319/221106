@@ -1,0 +1,80 @@
+/* pages/record/add/add.wxss */
+page {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+.addpage {
+  width: 100%;
+  height: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  position: absolute;
+  top: 2%;
+}
+.add-container{
+  border-radius: 30rpx;
+  background: #ffffff;
+  box-shadow:0rpx 0rpx 24rpx 10rpx rgba(105, 60, 209, 0.09);
+  box-sizing: border-box;
+  padding: 50rpx;
+  margin-top: 30rpx;
+}
+
+.tip-text{
+  margin-top: 30rpx;
+  margin-left: 3%;
+  font-size: 30rpx;
+  color: #a0a0a0;
+}
+.around{
+  width: 570rpx;
+  height: 80rpx;
+  opacity: 1;
+  border-radius: 8px;
+  background: rgba(241, 242, 246, 1);
+  margin-left: 2%;
+  margin-bottom: 50rpx;
+  color: #636363;
+}
+.input{
+  width: 540rpx;
+  height: 78rpx;
+  opacity: 1;
+  border-radius: 8px;
+  background: rgba(241, 242, 246, 1);
+  margin-left: 3%;
+  color: #636363;
+  font-size: 32rpx;
+}
+.button-OK{
+  background-color: #8B7FF5;
+  color: #ffffff;
+  font-size: 30rpx;
+  text-align: center;
+  border: 3rpx solid #8B7FF5;
+  border-radius: 27.5px;
+  opacity: 1;
+  top:960rpx;
+}
+.button-reset{
+  background-color: #8B7FF5;
+  color: #ffffff;
+  font-size: 30rpx;
+  text-align: center;
+  border: 3rpx solid #8B7FF5;
+  border-radius: 27.5px;
+  opacity: 1;
+  top:985rpx;
+}
+.timeIcon{
+  position: relative;
+  left:15rpx;
+  top:15rpx;
+  color: #a0a0a0;
+}
+.dt{
+  position: relative;
+  top:17rpx;
+}

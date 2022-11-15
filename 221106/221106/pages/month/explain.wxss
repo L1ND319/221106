@@ -1,0 +1,14 @@
+/* pages/month/explain.wxss */
+.exp{
+  position:absolute;
+  left: 25px;
+  top: 30px;
+  width: 326px;
+  height: 580px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
