@@ -1,2 +1,30 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+
+ <image mode="widthFix" class="size" src="../../png/mine/mine-background.png"></image> 
+<button plain="true" class="avatar-wrapper1[plain]" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+  <image mode="widthFix" class="avatar" src="{{avatarUrl}}"></image>
+</button> 
+<button plain="true" class="avatar-wrapper2[plain]" > 
+<input type="nickname" class="weui-i31nput" placeholder="点击设置头像昵称"/>
+</button>  
+<!-- userInfo如果为空证明没有登录 -->
+<!-- <button plain="true" class="avatar-wrapper1" wx-if="{{!userInfo}}" bindtap="login">点击登录</button>
+<view wx:else class="userInfo">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}</text>
+</view> -->
+
+<view class="rs">
+<view bindtap="gotorecord" >
+<image mode="widthFix" class="size2"  src="../../png/mine/mine-recordbutton.png">
+</image>
+</view>
+<view bindtap="gotoset" >
+<image mode="widthFix" class="size3"  src="../../png/mine/mine-setbutton.png">
+</image>
+</view>
+</view>
+
+
+
+

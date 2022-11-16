@@ -7,7 +7,9 @@
     "pages/month/month",
     "pages/write_note/write_note",
     "pages/month/explain",
-    "pages/record/add/add"
+    "pages/record/add/add",
+    "pages/mine/record",
+    "pages/mine/set"
 
   ],
   "entryPagePath":"pages/month/month",
