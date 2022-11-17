@@ -16,7 +16,11 @@ App({
         //   env 参数决定接下来小程序发起的云开发调用（wx.cloud.xxx）会默认请求到哪个云环境的资源
         //   此处请填入环境 ID, 环境 ID 可打开云控制台查看
         //   如不填则使用默认环境（第一个创建的环境）
+<<<<<<< HEAD
         env: 'tmp-7gvoi4838e894fa1',
+=======
+        env: 'cloud1-6gu1kr1ed52b5c5d',
+>>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce
         traceUser: true,
       });
     }

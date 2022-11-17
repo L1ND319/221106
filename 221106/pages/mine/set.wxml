@@ -1,0 +1,38 @@
+<!--pages/mine/set.wxml
+ <view class="view-contain-ti">
+    <text class="text-ti">经期天数</text>
+    <input class="input1"></input>
+</view>
+<view class="view-contain-ti">
+    <text class="text-ti">周期长度</text>
+    <input class="input1"></input>
+</view>
+ 
+  <view class="container1">
+ <picker class="picker1" range="{{['1','2','3','4','5','6','7','8','9','10']}}">经期天数</picker>
+ </view> -->
+
+
+ <form bindsubmit='formSubmit' >
+<view class="addpage">
+
+<view class="add-container">
+  <view class="tip-text">经期天数</view>
+ <view class="around">
+  <input placeholder="经期天数通常为2到7天" class="input" name="span1" value="{{span1}}"  type="number"/>
+</view>
+ </view>
+
+
+<view class="add-container">
+ <view class="tip-text">周期天数</view>
+  <view class="around">
+<input class="input" name="span2" value="{{span2}}"  type="number"/>
+  </view>
+</view>
+</view>
+
+<button class="button-OK" form-type='submit' style="width: 480rpx;" bindtap="showToast">确定</button>
+
+</form>
+ 

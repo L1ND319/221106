@@ -1,0 +1,181 @@
+/* pages/month/month.wxss */
+/* pages/calendar/calendar.wxss */
+page {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+
+
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0%;
+}
+.calendar_page{
+  border-radius: 30rpx;
+  background: #ffffff;
+  box-shadow:0rpx 24rpx 38rpx rgba(105, 60, 209, 0.09);
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+.top_bar{
+  height: 80rpx;
+  line-height: 70rpx;
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  margin-inline: -80rpx;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 90rpx;
+}
+.top_bar text
+{
+  display: inline-block;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  padding: 10rpx 12rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #8B7FF5;
+  color: #8B7FF5;
+  }
+
+
+.calendar_head{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  border-radius: 11px;
+  text-align: center;
+  background: rgba(255, 241, 227, 1);
+}
+.calendar_head .td{
+  
+  width: 60rpx;
+  height: 50rpx;
+
+  line-height: 50rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.calendar_body{
+  display:flex; 
+  flex-wrap:wrap;
+  width: 100%;
+  align-items: center;
+  margin-top: 25rpx; 
+  text-align: center;
+  position: relative;
+  left: 1.5%;
+}
+.calendar_body .td{
+  /* margin-left:26rpx; */
+  margin-left: 1.5%;
+  margin-right: auto;
+  width: 80rpx;
+  height: 72rpx;
+  text-align: center;
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #000000;
+  box-sizing: border-box;
+}
+.calendar_body .td .day{
+  background:#FFF; 
+  border-radius:50%; 
+  width: 60rpx;
+  line-height: 60rpx;
+  align-items: center;
+}
+
+.calendar_body .td.monthly .day{
+  background:#FC91B6;
+   color:#FFF
+       
+}
+.calendar_body .td .now{
+  background:#E2DFFC;
+  color:#000000
+}
+.calendar_body .td.selected_day .day{
+  background: #8B7FF5;
+  color: #fff;
+}
+.moon,.moon1{
+  position: relative;
+  width: 70rpx;
+  height: 70rpx;
+  left:88%;
+}
+
+
+
+.legend{
+  position: absolute;
+  top:880rpx;
+  width: 100%;
+  display: flex;
+  margin-left: -20px;
+  justify-content: space-around;
+}
+.pink,.green,.red{
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+.f_text,.p_text,.c_text{
+  position: absolute;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 1);
+
+} 
+.jump1{  
+  width: 20px;
+  height: 20px;
+  opacity: 1; 
+}
+ 
+.jump[plain]{
+  border:none;
+  padding: 0;
+  position: absolute;
+  top:820rpx;
+  right: -60px;
+}
+.already{
+  position:absolute;
+  right:-70px;
+  top: 980rpx;
+  width: 200px;
+  height: 14px;
+  opacity: 1;
+  font-size: 10.45px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 13.07px;
+  color: rgba(137, 150, 159, 1);
+  text-align: left;
+  vertical-align: top;
+
+}
+
+
+

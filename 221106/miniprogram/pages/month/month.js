@@ -20,6 +20,10 @@ Page({
           tomonth:tomonth
       })
       that.draw_calendar(tomonth);
+<<<<<<< HEAD
+=======
+      
+>>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce
   },
   prev:function(e){
       var that = this

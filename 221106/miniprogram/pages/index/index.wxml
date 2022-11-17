@@ -3,14 +3,24 @@
   </image>
 </view>
 
+<<<<<<< HEAD
 <view class="p">
 <scroll-view class="sc-v" scroll-y="true">
+=======
+      <view class="page">
+>>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce
   <view wx:for="{{groupList}}" wx:for-item="group" wx:key="groupId">
         <navigator url="/pages/form/index?groupId={{group.groupId}}" class="card">
         <view class="card-container">
             <view class="brand">
                 <view class="title">品牌：</view>
+<<<<<<< HEAD
                 <view class="info">{{group.code_a}}</view>
+=======
+                <view class="info">
+                {{group.code_a}}
+                </view>
+>>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce
             </view>
             <view class="buydate">
                 <!-- <view class="title">日期：</view> -->
@@ -19,11 +29,22 @@
             <view class="line"></view>
             <view class="price">
                 <!-- <view class="title">价格：</view> -->
+<<<<<<< HEAD
                 <view class="info">￥{{group.leader}}</view>
             </view>
             <view class="num">
                 <view class="title">数量：</view>
                 <view class="info">{{group.code_b}}</view>
+=======
+                <view class="info">¥{{group.leader}}</view>
+            </view>
+            <view class="num">
+                <view class="title">数量：</view>
+                <view class="info">
+                {{group.code_b}}
+                
+                </view>
+>>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce
             </view>
             <view class="feeling">
                 <view class="title">体感：</view>
@@ -35,7 +56,13 @@
         </view>
         </navigator>
       </view>
+<<<<<<< HEAD
       </scroll-view>
+=======
+
+
+
+>>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce
     <view class="choose">
         <navigator class="join" url="/pages/form/index">添加</navigator>   
     </view>
