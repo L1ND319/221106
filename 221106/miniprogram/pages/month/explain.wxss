@@ -1,9 +1,12 @@
 /* pages/month/explain.wxss */
+<<<<<<< HEAD:221106/miniprogram/pages/month/explain.wxss
 page {
   position: fixed;
   width: 100%;
   height: 100%;
 }
+=======
+>>>>>>> 9edb4a2d18727a37b293f219e4e1c7001029596e:221106/pages/month/explain.wxss
 .exp{
   position:absolute;
   left: 25px;

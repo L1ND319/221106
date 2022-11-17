@@ -1,3 +1,4 @@
+<<<<<<< HEAD:221106/miniprogram/pages/science/science.wxss
 /* pages/science/science.wxss */
 page {
   position: fixed;
@@ -38,4 +39,46 @@ page {
   line-height: 1.5em;
   letter-spacing: 1px;
   font-size: 35rpx;
+=======
+/* pages/science/science.wxss */
+page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.ground{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.ground image{
+  width: 300px;
+  height: 300px;
+  position:fixed; 
+  z-index: -1;
+}
+.flash_img{ 
+  position: fixed; 
+  left: 310px;
+  top: 30px; 
+  width: 30px;
+  height: 30px;
+}
+.text-box{
+  position: fixed;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  color: #89969F;
+  width: 310px;
+  height: 90px;
+}
+.text-box text{
+  position: absolute;
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-size: 35rpx;
+>>>>>>> 9edb4a2d18727a37b293f219e4e1c7001029596e:221106/pages/science/science.wxss
 }
