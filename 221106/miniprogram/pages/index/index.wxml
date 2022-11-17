@@ -1,0 +1,49 @@
+<view class="ground">
+  <image src="../../png/record/background.png" mode="widthFix">
+  </image>
+</view>
+
+      <view class="page">
+  <view wx:for="{{groupList}}" wx:for-item="group" wx:key="groupId">
+        <navigator url="/pages/form/index?groupId={{group.groupId}}" class="card">
+        <view class="card-container">
+            <view class="brand">
+                <view class="title">品牌：</view>
+                <view class="info">
+                {{group.code_a}}
+                </view>
+            </view>
+            <view class="buydate">
+                <!-- <view class="title">日期：</view> -->
+                <view class="info">{{group.num}}</view>
+            </view>
+            <view class="line"></view>
+            <view class="price">
+                <!-- <view class="title">价格：</view> -->
+                <view class="info">¥{{group.leader}}</view>
+            </view>
+            <view class="num">
+                <view class="title">数量：</view>
+                <view class="info">
+                {{group.code_b}}
+                
+                </view>
+            </view>
+            <view class="feeling">
+                <view class="title">体感：</view>
+                <view class="info">{{group.code_c}}</view>
+            </view>
+            
+            
+            
+        </view>
+        </navigator>
+      </view>
+
+
+
+    <view class="choose">
+        <navigator class="join" url="/pages/form/index">添加</navigator>   
+    </view>
+
+</view>
