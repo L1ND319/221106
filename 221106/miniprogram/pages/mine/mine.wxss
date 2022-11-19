@@ -1,5 +1,5 @@
 /* pages/mine/mine.wxss */
-page {
+.page {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -38,12 +38,14 @@ page {
 {
   z-index: 3;
   margin-top: 300rpx;
+  text-align: center;
   align-items: center;
   border-radius: 200rpx;
   border:none;
   height: 240rpx;
   
 
+ 
 }
 .avatar-wrapper2[plain]
 {
@@ -58,34 +60,26 @@ page {
 }
 
 .avatar{
-  background-color: rgb(224, 215, 226);
+  background-position: center;
   border-radius: 35px;
-  width: 80%;
-  height: 100%;
+  width: 220rpx;
+  height: 220rpx;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.29);
+  /* background-color: #ffffff; */
+  background-image:url('https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0');
 }
 
 .weui-i31nput{
+  margin-top: 70rpx;
+  margin-left:auto;
+  margin-right: auto;
   width: 80%;
-  height: 40px;
-  margin:20px auto;
+  height: 30rpx;
+  /* margin:20px auto; */
  font-style:initial;
   font-size: 25rpx;
   text-align: center;
   background:none;
   border-radius: 5px;
  
-}
-.userInfo{
-  z-index: 3;
-  margin-top: 300rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.userInfo image{
- z-index: 3;
-  width: 200rpx;
-  height: 200rpx;
-  border-radius: 200rpx;
 }

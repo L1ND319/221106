@@ -6,8 +6,8 @@ Page({
    */
   data: {
   
-        span1: '',
-        span2: '',
+        span1: '5',
+        span2: '28',
      
       },
      

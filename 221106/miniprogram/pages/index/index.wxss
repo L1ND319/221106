@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 page{
     position: fixed;
     height: 100%;
@@ -17,27 +16,6 @@ page{
     height:450px;
     opacity: 1;
   }
-=======
-page {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-.ground{
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-.ground image{
-  position:absolute;
-  top: 5%;
-  width: 450px;
-  height:450px;
-  opacity: 1;
-}
-
->>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce
 /* .choose{
     margin: 100rpx auto;
 } */
@@ -53,7 +31,6 @@ page {
     border-radius: 27.5px;
     opacity: 1;
     position: absolute;
-<<<<<<< HEAD
     top:88%;
     left: 18%;
     font-weight: bold;
@@ -148,91 +125,3 @@ page {
     color: bisque;
   }
   
-=======
-    top:80%;
-    left: 18%;
-    font-weight: bold;
-}
-.page{
-  background-color: rgb(255, 255, 255);
-  padding: 20rpx 0;
-  min-height: 100vh;
-}
-
-.card{
-  width: 100%;
-  height: 100%;
-  padding-left: 50rpx;
-  padding-right: 50rpx;
-  box-sizing: border-box;
-  position: absolute;
-  margin-top: 20rpx;
-}
-
-.card-container{
-  /* width: 600rpx;
-  height: 200rpx; */
-  border-radius: 30rpx;
-  background: #ffffffb2;
-  border: 0px solid rgba(182, 127, 245, 0);            
-  box-shadow: 0px 0px 12rpx rgba(49, 20, 102, 0.2);
-  padding: 30rpx;
-  
-
-
-}
-
-
-.brand{
-  display: flex;
-  margin-bottom: -40rpx;
-}
-.line{
-  margin-top: 20rpx;
-  width: 100%;
-  height: 1px;
-  background-image: linear-gradient(to right, rgb(175, 164, 193,0.575) 0%, rgba(175, 164, 193, 0.575) 50%, transparent 80%);
-  background-size: 12px 1px;
-  background-repeat: repeat-x;
-}
-.buydate{
-  
-  margin-left:69%;
-  display: flex;
-}
-.num{
-  display: flex;
-  margin-top: -100rpx;
-}
-.feeling{
-  display: flex;
-  margin-top: 20rpx;
-}
-.price{
-  display: flex;
-  margin-top:70rpx;
-  margin-left: 80%;
-  font-size: 38rpx;
-}
-
-.title{
-  font-size: 32rpx;
-  font-weight: 500;
-  color: rgba(137, 150, 159, 1);
-  text-align: left;
-  
-  
-}
-
-.info{
-  color:#8b7ff5dc;
-  
-  font-weight: 500;
-}
-
-.toast{
-  text-align: center;
-  font-size: 40rpx;
-  color: bisque;
-}
->>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce

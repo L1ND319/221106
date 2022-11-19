@@ -15,11 +15,7 @@
             </view>
         </view>
         <view class="section">
-<<<<<<< HEAD
             <view class="title">体感（建议10字内）</view>
-=======
-            <view class="title">体感</view>
->>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce
             <view class="around">
             <input type="text" class="input" name="code_c"  />
             </view>
@@ -32,11 +28,7 @@
         </view>
 
         <view class="section">
-<<<<<<< HEAD
             <view class="title">购买日期（必选）</view>
-=======
-            <view class="title">购买日期</view>
->>>>>>> bc05d9512a5413849c09103ebce6f298e48cabce
             <view class="around">
 
       <picker mode="date" value="{{date}}"  end="{{date2}}" bindchange="bindDateChange" name="num" >      
