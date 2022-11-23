@@ -1,9 +1,18 @@
 <!--pages/science/science.wxml-->
-<view class="ground">
+<!-- <view class="ground">
   <image src="../../png/science/science-ground3.png" mode="widthFix">
   </image>
-  <view class="text-box">
+  
+</view>
+<image class="flash_img" src='../../png/science/science-flash2.png' bindtap="flash"></image> -->
+<view>
+<view class="random">
+<image class="purple" src="../../png/science/science-purple.png"></image>
+<view class="text-box">
         <text class="randomtext">“{{text}}”</text>
 </view>
 </view>
-<image class="flash_img" src='../../png/science/science-flash2.png' bindtap="flash"></image>
+<image class="aunt" mode="aspectFit" src="{{flag ?'../../png/science/science-aunt0.png':'../../png/science/science-aunt1.png'}}" bindtap="flash"></image>
+<image class="pink" src="../../png/science/science-pink.png" bindtap="gotoknow"></image>
+<image class="green" src="../../png/science/science-green.png" bindtap="gotoobj"></image>
+</view>

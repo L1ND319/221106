@@ -10,7 +10,7 @@ module.exports = async(event) =>{
     try{
         let res = await db
             .collection("test-group")
-            .orderBy("groupId","asc")
+            .orderBy("num","desc")
             .get();
         return {
             success: true,

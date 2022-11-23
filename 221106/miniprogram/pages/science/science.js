@@ -1,5 +1,6 @@
 // pages/science/science.js
-const texts = ['正常月经总量是5mL~80mL，大多数人在20mL~60mL。',
+const texts = ['点击‘姨妈’有惊喜',
+'正常月经总量是5mL~80mL，大多数人在20mL~60mL。',
 '红糖水对于缓解痛经的效果主要取决于热水。',
 '月经周期并不都是28天，只要间隔时间稳定就可认为是规律的。',
 '单次月经总量少于5mL则为月经过少，需注意原发病。',
@@ -16,7 +17,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    flag:true,
+    count:0,
   },
 
   /**
@@ -75,10 +77,28 @@ Page({
 
   },
   flash: function(){
+    this.setData({
+      flag: false,
+      count: this.data.count + 1
+    })
+      setTimeout(()=>{
+          this.setData({
+              flag: true
+            })
+      },250)
     function getrandom(min,max){
       return Math.floor(Math.random()*(max-min-1)+min);
   }
-  this.setData({text:texts[getrandom(0,texts.length-1)]})
-  }
-  
+  this.setData({text:texts[getrandom(1,texts.length-1)]})
+  },
+  gotoknow(){
+    wx.navigateTo({
+      url: '/pages/science/know/know',
+    })
+   },
+   gotoobj(){
+    wx.navigateTo({
+      url: '/pages/science/obj/obj',
+    })
+   }
 })

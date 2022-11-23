@@ -1,0 +1,10 @@
+<!--pages/science/obj/obj.wxml-->
+<view class="object">
+<view>
+<image class="img1" src="../../../png/science/obj-jin.png" mode="widthFix"></image>
+<button size="mini" type="primary" bindtap="jin" id="btn">{{isExpand?"收起":"展开"}}</button>
+</view>
+<text class="content {{isExpand?'expand':'collapse'}}">巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道</text>
+<image class="img2" src="../../../png/science/obj-tiao.png" mode="widthFix" bindtap="gototiao"></image>
+<image class="img3" src="../../../png/science/obj-bei.png" mode="widthFix" bindtap="gotobei"></image>
+</view>

@@ -155,6 +155,7 @@ page {
     margin-right: auto;
     margin-top: 20rpx;
     margin-bottom: auto;
+    border-radius: 3%;
 }
 .bot{
   position: absolute;

@@ -10,7 +10,10 @@ Page({
     title: "",
     content: "",
     itemData: {},
-    noteList: []
+    noteList: [],
+    show1:false,
+    show2:false,
+    show3:false,
   },
 
   /**
@@ -146,5 +149,20 @@ Page({
     //如果是异步的不能设置回调
     // wx.setStorageSync(app.globalData.NOTE_LIST, this.data.noteList)
     wx.setStorage(map)
-  }
+  },
+  click_img1:function(e){
+    this.setData({
+      show1: !this.data.show1
+    })
+    },
+    click_img2:function(e){
+      this.setData({
+        show2: !this.data.show2
+      })
+      },
+      click_img3:function(e){
+        this.setData({
+          show3: !this.data.show3
+        })
+        }
 })

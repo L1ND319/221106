@@ -1,4 +1,3 @@
-
 {
   "pages": [
     "pages/science/science",
@@ -10,43 +9,47 @@
     "pages/mine/record",
     "pages/mine/set",
     "pages/form/index",
-    "pages/index/index"
-
+    "pages/index/index",
+    "pages/science/know/know",
+    "pages/science/obj/obj"
   ],
-  "entryPagePath":"pages/month/month",
+  "entryPagePath": "pages/month/month",
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "经记人",
     "navigationBarTextStyle": "black",
-    "visualEffectInBackground":"hidden",
+    "visualEffectInBackground": "hidden",
     "backgroundColor": "#FFFFFF"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/science/science",
-      "iconPath": "png/icon/Lamp.png",
-      "selectedIconPath": "png/icon/Lamp（1）.png"
-    },
-    {
-      "pagePath": "pages/index/index",
-      "iconPath": "png/icon/Clipboard-Text.png",
-      "selectedIconPath": "png/icon/Clipboard-Text（1）.png"
-    },
-    {
-      "pagePath": "pages/month/month",
-      "iconPath": "png/icon/Calendar.png",
-      "selectedIconPath": "png/icon/Calendar（1）.png"
-    },
-    {
-      "pagePath": "pages/mood/mood",
-      "iconPath": "png/icon/Heart.png",
-      "selectedIconPath": "png/icon/Heart（1）.png"
-    },
-    {
-      "pagePath": "pages/mine/mine",
-      "iconPath": "png/icon/User.png",
-      "selectedIconPath": "png/icon/User（1）.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/science/science",
+        "iconPath": "png/icon/Lamp.png",
+        "selectedIconPath": "png/icon/Lamp（1）.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "png/icon/Clipboard-Text.png",
+        "selectedIconPath": "png/icon/Clipboard-Text（1）.png"
+      },
+      {
+        "pagePath": "pages/month/month",
+        "iconPath": "png/icon/Calendar.png",
+        "selectedIconPath": "png/icon/Calendar（1）.png"
+      },
+      {
+        "pagePath": "pages/mood/mood",
+        "iconPath": "png/icon/Heart.png",
+        "selectedIconPath": "png/icon/Heart（1）.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "png/icon/User.png",
+        "selectedIconPath": "png/icon/User（1）.png"
+      }
+    ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"}
+  "sitemapLocation": "sitemap.json"
+}

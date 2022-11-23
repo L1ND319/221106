@@ -1,0 +1,72 @@
+/* pages/science/obj/obj.wxss */
+page{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.object{
+  margin-top: 2%;
+}
+.img1{
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 90%;
+  position : fixed;
+  z-index: -1;
+}
+.img2{
+  margin-top: 35%;
+  margin-left: 5%;
+  width: 90%;
+  position : fixed;
+  z-index: -1;
+}
+.img3{
+  margin-top: 60%;
+  margin-left: 5%;
+  width: 90%;
+  position : fixed;
+  z-index: -1;
+}
+/* index.wxss */
+/* .container{
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 90%;
+} */
+.content{
+  position: relative;
+  top:200rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 30rpx;
+  margin-left: 5%;
+  width: 90%;
+  color: #89969F;
+  z-index: -1;
+}
+.expand{
+  -webkit-line-clamp: 0;
+}
+.collapse{
+  -webkit-line-clamp: 1;
+}
+/* .box{
+  text-align: center;
+  margin-top: 12%;
+  position: relative;
+} */
+#btn{
+position: relative;
+/* right:7%;
+top:11%; */
+left: 590rpx;
+top:120rpx;
+font-size: 27rpx;
+text-align: center;
+width: 100rpx;
+opacity: 1;
+border-radius: 50px;
+background: rgba(255, 199, 199, 1);
+}
