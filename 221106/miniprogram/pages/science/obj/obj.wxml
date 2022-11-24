@@ -1,10 +1,15 @@
 <!--pages/science/obj/obj.wxml-->
-<view class="object">
+<view class="container">
 <view>
-<image class="img1" src="../../../png/science/obj-jin.png" mode="widthFix"></image>
-<button size="mini" type="primary" bindtap="jin" id="btn">{{isExpand?"收起":"展开"}}</button>
+<image class="img1" mode="widthFix" src="{{isExpand1? '../../../png/science/obj-jin1.png':'../../../png/science/obj-jin0.png'}}" bindtap="jin"></image>
+<text class="content1 {{isExpand1?'expand':'collapse'}}">巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道</text>
 </view>
-<text class="content {{isExpand?'expand':'collapse'}}">巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道</text>
-<image class="img2" src="../../../png/science/obj-tiao.png" mode="widthFix" bindtap="gototiao"></image>
-<image class="img3" src="../../../png/science/obj-bei.png" mode="widthFix" bindtap="gotobei"></image>
+<view>
+<image class="img2" mode="widthFix" src="{{isExpand2? '../../../png/science/obj-tiao1.png':'../../../png/science/obj-tiao0.png'}}" bindtap="tiao"></image>
+<text class="content2 {{isExpand2?'expand':'collapse'}}">巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道</text>
+</view>
+<view>
+<image class="img3" mode="widthFix" src="{{isExpand3? '../../../png/science/obj-bei1.png':'../../../png/science/obj-bei0.png'}}" bindtap="bei"></image>
+<text class="content3 {{isExpand3?'expand':'collapse'}}">巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道</text>
+</view>
 </view>

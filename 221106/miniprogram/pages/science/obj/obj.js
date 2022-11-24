@@ -93,12 +93,26 @@
 // index.js
 Page({
   data:{
-    isExpand:false
+    isExpand1:false,
+    isExpand2:false,
+    isExpand3:false,
   },
   jin:function(){
     const self = this;
     self.setData({
-      isExpand:!self.data.isExpand
+      isExpand1:!self.data.isExpand1
+    });
+  },
+  tiao:function(){
+    const self = this;
+    self.setData({
+      isExpand2:!self.data.isExpand2
+    });
+  },
+  bei:function(){
+    const self = this;
+    self.setData({
+      isExpand3:!self.data.isExpand3
     });
   }
 })
