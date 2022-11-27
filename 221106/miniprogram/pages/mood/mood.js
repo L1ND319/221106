@@ -12,7 +12,6 @@ Page({
     isListView: true,
     keyWord:"",
     flag:true,
-    count:0,
   },
 
   /**
@@ -172,7 +171,6 @@ Page({
   onswitch(){
       this.setData({
           flag: false,
-          count: this.data.count + 1
         })
           setTimeout(()=>{
               this.setData({

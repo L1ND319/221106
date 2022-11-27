@@ -11,7 +11,8 @@
     "pages/form/index",
     "pages/index/index",
     "pages/science/know/know",
-    "pages/science/obj/obj"
+    "pages/science/obj/obj",
+    "pages/tip/index"
   ],
   "entryPagePath": "pages/month/month",
   "window": {

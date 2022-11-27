@@ -1,0 +1,48 @@
+<view>
+
+<view class="addpage">
+    <view class="add-container">
+        <view class="section">
+            <view class="title">品牌</view>
+            <view class="around">
+            <input type="text" class="input" name="code_a" placeholder="{{group.code_a}}" />
+            </view>
+        </view>
+        <view class="section">
+            <view class="title">数量</view>
+            <view class="around">
+            <input type="text" class="input" name="code_b"  placeholder="{{group.code_b}}"/>
+            </view>
+        </view>
+        <view class="section">
+            <view class="title">体感（建议10字内）</view>
+            <view class="around">
+            <input type="text" class="input" name="code_c" placeholder="{{group.code_c}}" />
+            </view>
+        </view>
+        <view class="section">
+            <view class="title">价格</view>
+            <view class="around">
+            <input type="digit" class="input" name="nickname" placeholder="{{group.leader}}" />
+            </view>
+        </view>
+
+        <view class="section">
+            <view class="title">购买日期（必选）</view>
+            <view class="around">
+
+      <picker mode="date" value="{{date}}"  end="{{date2}}" bindchange="bindDateChange" name="num" >      
+      <view class="input">
+        <text class="picker" >  
+          {{group.num}}
+        </text>  
+      </view>
+      </picker>       
+    </view>   
+        </view>
+    </view>
+    </view>
+    <view class="area">
+    <button class="de" bindtap="delete">删除</button>  
+    </view>
+  </view>

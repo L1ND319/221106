@@ -1,0 +1,91 @@
+
+
+
+.addpage {
+  width: 100%;
+  height: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  position: absolute;
+  top: 2%;
+}
+.add-container{
+  border-radius: 30rpx;
+  background: #ffffff;
+  box-shadow:0rpx 0rpx 24rpx 10rpx rgba(105, 60, 209, 0.09);
+  box-sizing: border-box;
+  padding: 50rpx;
+  margin-top: 30rpx;
+}
+
+/* .section{
+    margin: 40rpx 0 80rpx;
+} */
+.title{
+  margin-top: 30rpx;
+  margin-left: 3%;
+  font-size: 30rpx;
+  color: #a0a0a0;
+}
+.around{
+  width: 570rpx;
+  height: 80rpx;
+  opacity: 1;
+  border-radius: 8px;
+  background: rgba(241, 242, 246, 1);
+  margin-left: 2%;
+  margin-bottom: 50rpx;
+  color: #636363;
+}
+
+.input{
+  width: 540rpx;
+  height: 78rpx;
+  opacity: 1;
+  border-radius: 8px;
+  background: rgba(241, 242, 246, 1);
+  margin-left: 3%;
+  color: #636363;
+  font-size: 32rpx;
+}
+/* .mg{
+    margin: 30rpx 0;
+} */
+.area{
+   position: relative;
+   top:1150rpx;
+   margin-bottom: 30rpx;
+   padding-bottom: 30rpx;
+}
+.de{
+  margin-bottom: 25rpx;
+  background-color: #8B7FF5;
+  color: #ffffff;
+  font-size: 30rpx;
+  text-align: center;
+  border: 3rpx solid #8B7FF5;
+  border-radius: 27.5px;
+  opacity: 1;
+  
+}
+
+
+ 
+/* 日期选择 */
+/* .picker_group {
+  height: 85rpx;
+  line-height: 85rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #888;
+  border-bottom: 1rpx solid #efefef;
+ 
+} */
+ 
+.picker {
+  position: relative;
+  top:-30rpx
+  
+}

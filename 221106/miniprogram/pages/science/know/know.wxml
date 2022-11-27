@@ -1,2 +1,4 @@
 <!--pages/know/know.wxml-->
-<text>pages/know/know.wxml</text>
+<view>
+		<web-view src="https://m.dxy.com/baike/category/24821?dxa_adplatform=m.dxy.com"></web-view>
+	</view>

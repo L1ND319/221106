@@ -11,6 +11,8 @@ Page({
       ymd:"",
       selected_ymd:"",
       // selected_action:"",
+      touchS : [0,0],
+      touchE : [0,0],
   },
   onLoad: function (options) {
       var that = this
@@ -177,6 +179,35 @@ Page({
     wx.navigateTo({
       url: '../month/explain',
     })
+  },
+
+  touchStart: function(e){
+    // console.log(e.touches[0].pageX)
+    let sx = e.touches[0].pageX
+    let sy = e.touches[0].pageY
+    this.data.touchS = [sx,sy]
+  },
+  // 触摸滑动事件
+  touchMove: function(e){
+    let sx = e.touches[0].pageX;
+    let sy = e.touches[0].pageY;
+    this.data.touchE = [sx, sy]
+  },
+  // 触摸结束事件
+  touchEnd: function(e){
+    let start = this.data.touchS
+    let end = this.data.touchE
+    // console.log(start)
+    // console.log(end)
+    if(start[0] < end[0] - 50){
+      // console.log('向右滑，这里可以调用方法，及页面跳转事件')
+      let a = this.prev(e)
+    }else if(start[0] > end[0] + 50){
+      // console.log('向左滑，这里可以调用方法，及页面跳转事件')
+      let a = this.next(e)
+    }else{
+      // console.log('向上或向下滑动')
+    }
   },
   // /**
   //  * 生命周期函数--监听页面加载
