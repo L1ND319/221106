@@ -67,10 +67,10 @@ page{
   
   .sc-v {
     position: absolute;
-    width: 95%;
+    width: 90%;
     height: 80%;
-    top:2%;
-    left:2.5%;
+    top:5%;
+    left:5%;
 }
   .brand{
     display: flex;

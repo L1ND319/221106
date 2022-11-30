@@ -2,14 +2,50 @@
 <view class="container">
 <view>
 <image class="img1" mode="widthFix" src="{{isExpand1? '../../../png/science/obj-jin1.png':'../../../png/science/obj-jin0.png'}}" bindtap="jin"></image>
-<text class="content1 {{isExpand1?'expand':'collapse'}}">巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道</text>
+<text class="content1 {{isExpand1?'expand':'collapse'}}">卫生巾也有不同种类
+<text class="type">• 纯棉卫生巾</text>
+柔软舒适，不易过敏但回弹性略产，适合量少人群
+<text class="type">• 网面卫生巾</text>
+吸收快，渗透性好，适合量多人群。但亲肤性较差，容易过敏
+<text class="type">• 绵柔卫生巾</text>
+绵柔≠纯棉。是一种化纤原料高温融化压制而成，像棉花一样柔软。兼具透气度和干爽度。
+<text class="type">• 液体卫生巾</text>
+外观、使用方法与传统卫生巾并无区别。采用源自液体的高密度吸收材料，吸水性极强，瞬间干爽。
+<text class="type">• 发热卫生巾</text>
+号称自发热，可缓解不适。使用时注意不要贴反。使用感受因人而异，有人表示位置刚好温暖舒适，也有许多人表示位置尴尬，容易滋生细菌，散发异味。
+</text>
 </view>
 <view>
 <image class="img2" mode="widthFix" src="{{isExpand2? '../../../png/science/obj-tiao1.png':'../../../png/science/obj-tiao0.png'}}" bindtap="tiao"></image>
-<text class="content2 {{isExpand2?'expand':'collapse'}}">巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道</text>
+<text class="content1 {{isExpand2?'expand':'collapse'}}">清洁、方便携带，也存在危险因素
+<text class="title">• 材质：</text>主要以棉和人造纤维或者混合材料为主。
+<text class="title">• 大小：</text>分为不同型号，直径基本上是在1到2厘米之间。
+<text class="title">• 造型：</text>在其尾部有一根棉线，用于取出棉条。
+<text class="title">• 常见疑问：\n</text>
+<text class="question2">1. 处女可以用吗？</text>
+处女膜并不是完全封闭的状态，即使是选择最大号的棉条，也不会影响到处女膜的完整性。但是需要尽量放松、深呼吸、转移注意力，让自己不至于太紧张。
+<text class="question2">2.会引起什么休克吗？</text>
+基于棉条本身的吸力很大，除了可以吸收血液以外，还可以吸收阴道里的分泌物。因此长时间的放置会降低阴道内的自我防护机制，阴道里产生的一些细菌就有可能趁机进入到血液当中，导致中毒性休克。因此最长8小时更换一次。
+<text class="question2">3.什么情况不能用？</text>
+月经还没来或者刚刚来的时候或本身有妇科炎症不建议使用。
+<text class="title">• 使用：</text>建议网上查找详细图文教程。
+</text>
 </view>
 <view>
 <image class="img3" mode="widthFix" src="{{isExpand3? '../../../png/science/obj-bei1.png':'../../../png/science/obj-bei0.png'}}" bindtap="bei"></image>
-<text class="content3 {{isExpand3?'expand':'collapse'}}">巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道巾巾乐道</text>
+<text class="content1 {{isExpand3?'expand':'collapse'}}">容量大，可重复使用
+<text class="title">• 材质：</text>基本都是医用硅胶制成，软且有弹性。
+<text class="title">• 大小：</text>有不同的型号。考量的因素主要是阴道的宽窄，以及月经量的多少。
+<text class="title">• 造型：</text>基本上呈钟型，后面带个小柄。
+<text class="title">• 常见疑问：\n</text>
+<text class="question3">1.没有性经验的女性能不能用月经杯？</text>
+月经杯比卫生棉条大很多，一进一出，还是有挺大几率把阴道瓣（俗称处女膜）给撑开甚至撑破的。
+<text class="question3">2.用了月经杯之后，阴道会不会变松？</text>
+阴道本身具有良好的延展性和弹性，其性能远在月经杯之上。
+<text class="question3">3.用月经杯会感觉疼吗？</text>
+如果位置正确，基本上没有什么感觉。不过，也不排除有人过分紧张令月经杯无法置入。
+<text class="title">• 使用：</text>建议网上查找详细图文教程。
+<text class="title">• 注意事项：</text> 建议过12小时就取出。需要注意清洗，需要及时倾倒，一些妇科炎症患者不建议使用月经杯。
+</text>
 </view>
 </view>

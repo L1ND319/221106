@@ -38,30 +38,23 @@ page{
   margin-left: 5%;
   width: 90%;
   color: #89969F;
+  /* line-height: 40rpx; */
 }
-.content2{
-  position: relative;
-  margin-top:0.2%;
-  margin-bottom: 0.2%;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-size: 30rpx;
-  margin-left: 5%;
-  width: 90%;
-  color: #89969F;
+.title{
+  font-weight: bold;
+  line-height: 50rpx;
 }
-.content3{
-  position: relative;
-  margin-top:0.2%;
-  margin-bottom: 0.2%;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-size: 30rpx;
-  margin-left: 5%;
-  width: 90%;
-  color: #89969F;
+.type{
+  color:#f8a6a6;
+  line-height: 50rpx;
+}
+.question2{
+  color: #8eb7f5;
+  line-height: 50rpx;
+}
+.question3{
+  color: #f5c392;
+  line-height: 50rpx;
 }
 .expand{
   -webkit-line-clamp: 0;

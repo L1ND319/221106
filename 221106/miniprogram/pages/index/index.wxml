@@ -6,6 +6,7 @@
 <view class="p">
 <scroll-view class="sc-v" scroll-y="true">
   <view wx:for="{{groupList}}"  wx:key="groupId" bindtap="godetail" data-id="{{item._id}}">
+        <view class="card">
         <view class="card-container">
             <view class="brand">
                 <view class="title">品牌：</view>
@@ -32,7 +33,7 @@
             
             
         </view>
-     
+     </view>
       </view>
       </scroll-view>
     <view class="choose">

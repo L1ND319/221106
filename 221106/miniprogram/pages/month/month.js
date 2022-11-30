@@ -1,6 +1,13 @@
 // // pages/month/month.js
-
-
+// var flag="0"
+// var ymlength="0"
+// var cyclelength="0"
+var N = 31;
+var day;
+var month;
+var leapOrMean = 0;
+var lastMonth = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var thisMonth = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 Page({
   data: {
       tomonth: '',
@@ -11,8 +18,6 @@ Page({
       ymd:"",
       selected_ymd:"",
       // selected_action:"",
-      touchS : [0,0],
-      touchE : [0,0],
   },
   onLoad: function (options) {
       var that = this
@@ -22,6 +27,16 @@ Page({
           tomonth:tomonth
       })
       that.draw_calendar(tomonth);
+//judge 判断上个月的平闰
+      if (lastMonth[N] === -1) leapOrMean = 0;
+      else leapOrMean = 1;
+//change
+      for (var i = 0; i <= N; i ++ ) {
+          lastMonth[i] = thisMonth[i];
+          thisMonth[i] = 0;
+      }
+      if (leapOrMean) thisMonth[N] = 0;
+      else thisMonth[N] = -1;
   },
   prev:function(e){
       var that = this
@@ -114,7 +129,6 @@ Page({
           list.push({
               ymd :ymd,
               date : j,
-              
               monthly : action=="monthly"?true:false,
               today : today
           })
@@ -147,11 +161,38 @@ Page({
               monthly:false,
           })
           wx.setStorageSync(this.data.ymd,"")
+          
       }else{
           this.setData({
               monthly:true,
           })
           wx.setStorageSync(this.data.ymd,"monthly")
+          wx.cloud.callFunction({
+            name:"addstartday",
+                data:{
+                  day:this.data.ymd,
+                },
+        }).then(console.log)
+    //getDay 获取int日期
+    var ymd = this.data.ymd;
+    var len = ymd.length;
+    if (len === 10) {
+        //日期十位数
+        if (ymd[len - 2] === '1') day = 10;
+        else if (ymd[len - 2] === '2') day = 20;
+        else day = 30;
+        day += ymd[len - 1] - '0';
+    } else {
+        //日期个位数
+        day = ymd[len - 1] - '0';
+    }
+    // getMonth 获取int月份
+    if (ymd[5] === '1') month = 10;
+    else month = 0;
+    month += ymd[5] - '0';
+
+    //在这里获取周期
+    this.getCycle();
       }
       this.draw_calendar(this.data.tomonth)
       
@@ -163,51 +204,57 @@ Page({
       })
       var action = wx.getStorageSync(ymd);
       if(action=="monthly"){
-          this.setData({
-              monthly:true
+        this.setData({
+          monthly:true, 
           })
-      }
+          }
       else{
            this.setData({
-              monthly:false
+              monthly:false,
           })
       }
       
   },
   
+   getCycle:function(e) {
+    //参数 day : int，表示当前的日期
+    var lastDay = -1;
+    for (var i = day - 1; i >= 1; i -- ) {
+        if (thisMonth[i] === 1 && thisMonth[i - 1] === 0) {
+            lastDay = i;
+            break;
+        }
+    }
+    var cycle = -1;
+    var lastMonthStart = -1;
+    if (lastDay === -1) {
+        if (leapOrMean) lastMonthStart = 31;
+        else lastMonthStart = 30;
+        if (lastMonth[lastMonthStart] === 0) {
+            lastDay = 1;
+            cycle = day;
+        } else {
+            for (var i = lastMonthStart; i; i -- ) {
+                if (lastMonth[i] === 1 && lastMonth[i - 1] === 0) {
+                    lastDay = i;
+                    break;
+                }
+            }
+        }
+        cycle = day + 31 - lastDay;
+        if (lastMonthStart === 31) cycle ++;
+    } else {
+        cycle = day - lastDay + 1;
+    }
+    console.log(day);
+    console.log(lastDay);
+    console.log(cycle);
+},
+
     goTo:function(){
     wx.navigateTo({
       url: '../month/explain',
     })
-  },
-
-  touchStart: function(e){
-    // console.log(e.touches[0].pageX)
-    let sx = e.touches[0].pageX
-    let sy = e.touches[0].pageY
-    this.data.touchS = [sx,sy]
-  },
-  // 触摸滑动事件
-  touchMove: function(e){
-    let sx = e.touches[0].pageX;
-    let sy = e.touches[0].pageY;
-    this.data.touchE = [sx, sy]
-  },
-  // 触摸结束事件
-  touchEnd: function(e){
-    let start = this.data.touchS
-    let end = this.data.touchE
-    // console.log(start)
-    // console.log(end)
-    if(start[0] < end[0] - 50){
-      // console.log('向右滑，这里可以调用方法，及页面跳转事件')
-      let a = this.prev(e)
-    }else if(start[0] > end[0] + 50){
-      // console.log('向左滑，这里可以调用方法，及页面跳转事件')
-      let a = this.next(e)
-    }else{
-      // console.log('向上或向下滑动')
-    }
   },
   // /**
   //  * 生命周期函数--监听页面加载
